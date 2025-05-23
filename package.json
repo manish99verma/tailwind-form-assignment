@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-css-assignment",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}

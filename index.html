@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen w-full">
+      <div
+        class="flex flex-[0.6] mx-auto px-auto text-center items-center justify-center py-8"
+      >
+        <div class="w-80 sm:w-96">
+          <h1 class="text-2xl text-black font-medium">Login</h1>
+          <p class="mt-2 text-gray-400">
+            Enter your credential to access your account
+          </p>
+          <button
+            class="flex mt-6 justify-center flex-row py-3 gap-2 border-1 border-gray-300 rounded-md w-full cursor-pointer hover:bg-gray-50"
+          >
+            <img
+              src="./assets/google.png"
+              alt="google"
+              class="w-6 h-6"
+            />
+            <span> Login With Google </span>
+          </button>
+
+          <div class="flex items-center gap-3 my-12">
+            <div class="flex flex-1 h-[2px] bg-gray-400"></div>
+            Or
+            <div class="flex flex-1 h-[2px] bg-gray-400"></div>
+          </div>
+
+          <form class="block">
+            <div>
+              <label for="email" class="block text-left">Email Address</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="block w-full border-[2px] border-gray-300 rounded-md p-[10px] mt-1"
+                placeholder="email@gmail.com"
+              />
+            </div>
+
+            <div class="mt-4">
+              <div class="flex justify-between">
+                <label for="password" class="text-left">Password</label>
+                <button class="text-blue-600 cursor-pointer">
+                  Forgot Password?
+                </button>
+              </div>
+
+              <input
+                type="text"
+                id="password"
+                name="password"
+                class="block w-full border-[2px] border-gray-300 rounded-md p-[10px] mt-1"
+                placeholder="Password"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="block w-full mt-8 py-2 rounded-sm bg-blue-600 text-white cursor-pointer"
+            >
+              Login
+            </button>
+
+            <div class="text-gray-400 mt-2">
+              Don't have an account?
+              <button class="text-black cursor-pointer">Register here</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex flex-[0.4] bg-blue-gray-900">
+        <img
+          class="object-contain"
+          src="./assets/left_finger_background.png"
+          alt="left-arrow-girl"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </body>
+</html>
